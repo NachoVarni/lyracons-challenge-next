@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: var(--black);
+  text-align: center;
+  position: relative;
+
+  .text {
+    color: var(--white);
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+
+  .cross {
+    display: none;
+  }
+
+  @media (max-width: 812px) {
+    .boldText {
+      display: block;
+    }
+
+    .cross {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      color: white;
+      top: 15px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.wrapper {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-lines);
+  width: 100%;
+  height: 80px;
+  position: relative;
+
+  @media (max-width: 812px) {
+    justify-content: space-between;
+  }
+
+  .leftResponsiveWrapper {
+    display: none;
+
+    @media (max-width: 812px) {
+      display: flex;
+      margin-left: 20px;
+
+      .searchImgResponsive {
+        display: flex;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+
+      .hamMenuResponsive {
+        display: flex;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .logoWrapper {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 812px) {
+      display: none;
+    }
+  }
+
+  .logoWrapperResponsive {
+    width: 800px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 812px) {
+      display: flex;
+    }
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    .item {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .shopList {
+      display: none;
+    }
+
+    .shop:hover {
+      position: relative;
+
+      .shopList {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -20;
+        padding-top: 50px;
+        background-color: white;
+
+        .shopItem {
+          font-size: 14px;
+          padding: 10px 50px 10px 10px;
+
+          &:hover {
+            color: white;
+            background-color: var(--gray-navbar);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 812px) {
+      display: none;
+    }
+  }
+
+  .rightContent {
+    display: flex;
+    color: var(--gray-navbar);
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0px 50px;
+
+    @media (max-width: 812px) {
+      display: none;
+    }
+
+    .inputWrapper {
+      display: flex;
+      border-bottom: 1px solid;
+      padding: 5px;
+
+      .searchInput {
+        border: none;
+        font-size: 12px;
+        width: 100px;
+      }
+
+      .searchImage {
+        display: flex;
+        position: relative;
+      }
+    }
+
+    .option {
+      cursor: pointer;
+    }
+  }
+
+  .optionResponsive {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 812px) {
+      display: flex;
+      margin-right: 20px;
+    }
+  }
+}

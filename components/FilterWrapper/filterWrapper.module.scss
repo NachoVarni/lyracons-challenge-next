@@ -1,0 +1,14 @@
+.wrapper {
+  margin-left: 5px;
+  width: 33%;
+  font-size: 14px;
+
+  @media (max-width: 812px) {
+    display: none;
+  }
+
+  .text {
+    padding: 20px 0px 10px;
+    border-bottom: 1px solid var(--gray-lines);
+  }
+}

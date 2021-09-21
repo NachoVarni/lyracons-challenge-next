@@ -14,3 +14,36 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --red-details: #d81313;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-lines: #d9d9d9;
+  --gray-old-number: #b5b5b5;
+  --gray-checkbox: #707070;
+  --gray-filters: #5d5d5d;
+  --gray-navbar: #989898;
+  --gray-card-offer: #7c8aa275;
+  --gray-products-search: #697078;
+  --gray-bg-image: #9fa9ae;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}

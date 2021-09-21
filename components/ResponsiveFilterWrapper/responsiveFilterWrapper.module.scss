@@ -1,0 +1,32 @@
+.wrapper {
+  display: none;
+
+  @media (max-width: 812px) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 12px;
+
+    .filterBy {
+      border: 1px solid black;
+      border-left: none;
+      padding: 20px 40px;
+      width: 50%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .orderBy {
+      border: 1px solid black;
+      border-right: none;
+      padding: 20px 40px;
+      width: 50%;
+      text-align: center;
+      cursor: pointer;
+
+      .arrow {
+        margin-left: 5px;
+      }
+    }
+  }
+}
